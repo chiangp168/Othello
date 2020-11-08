@@ -1,0 +1,13 @@
+1. No, I have my computer just pick a random move from the set of legal_table.
+
+2. Even though I didn't purposely make my computer smarter, just from it picking ramdom move
+is hard to beat the computer, so I am satisfied with how smart (dumb?) it is.
+
+3. Before each player or computer pick a spot, I check the next player's legal move and store 
+the coordinates in a set called legal_table in Disks. And then my computer will randomly 
+pick a tuple representing the coordinates of a legal move from the set.
+
+4. Pretty often!
+
+5. I could make the computer pick corner spots as priority. Since one of the strategy to win this
+game is to pick corner spots.

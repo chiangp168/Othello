@@ -1,0 +1,34 @@
+For Board in board.py
+I will test the constructors. Valid inputs for  WIDTH, HEIGHT, CELL are three integers or float numbers.
+It should return the exact integer or float that you passed in. For invalid inputs such as string, the progam
+would shut down and give an error. I am confident that have considered all the every possibility.  
+
+For Disk, in disk.py. I will test the constructor. x, y, cell should be intergers or float. self.draw_black
+is a boolean value, self.column and self.row are intergers.
+
+For Disks in disks.py, I will test the constructors as well. Valid inputs for WIDTH, HEIGHT, CELL, 
+are integers or float, and black, white, total, total column, total row are integers. It should return
+exacatly the value you assigned. For gc, the valid input will be GameController object. Self.table
+should be a nested list that has n row representing number of lists, and m column representing 
+number of elements in a list. Invalid inputs will raise an error. I am confident that have considered 
+all the every possibility.
+
+For update method in disks.py. I can test it by createing an object in nested list, and make sure no
+new object is created on top of the existing object when user click in the same spot. Whenever a new 
+object is created, the white, black tile and total count should increase by 1. The new object should 
+be added into the nested list as well. I think I have considered all the possibility.
+
+For game stop method in disks.py. I will test by assigning intergers into variable, and check if
+it execute the if statement when total = colum * row. And then compare the numbers of white and black
+tile. If the number of white tile is larger than black tile, self.gc.computer_wins should become True.
+Self.gc.player_wins will become True if the numbers of black titles is larger than the white titles.
+If the number of white and black tiles are equal, self.gc.tie should become True. I am confident I have
+considered all the possible outcome.
+
+For GameController class, I will test the constructor. Valid inputs for WIDTH, HEIGHT are integers or 
+float. self.player_wins, self.computer_wins, self.tie, are boolean values. For update method, if the
+boolean value for self.computer_wins is True, it should print out game is over and the computer wins, 
+it will also print out the numbers of white and black tiles. Same thing when self.player_win, except 
+it will say that the player wins. If the game is a tied, it will print out the game was a tie.
+
+

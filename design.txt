@@ -1,0 +1,35 @@
+Data structure:
+I'll use a nested list to store tiles in cell by identifying the row and column.
+
+Classes:
+1. Board
+2. One tile
+3. Multiple tiles
+5. Game Control
+6. A Othello starter.pyde file
+
+Description of each class
+1. Board: In this class, we will set the backgroun color to green, and draw the black line to
+represent each cell in the board using line(), stroke() and strokeWeight(). Also need update()
+to check if the game is over, and display() to display cells.
+
+2. One tile: Thic class draws a round disk shape that represents a tile. Starter code: 
+    def display(self):
+        fill(self.color)
+        ellipse(self.column * 100 + 50, self.row * 100 + 50, 90, 90)
+
+3. Multiple tiles: Display multiple tiles. Add() to draw and display tiles. Chang() to flip
+the tile colors.
+
+5. Game Control: If the board is filled, it'll display the numbers of white and black tiles, and
+    announce the winner.
+
+6. In Othello starter.pyde file, import all the object classes, set up the display width and height.
+
+
+When the user tries to make an illegal move: Tile should not be created or displayed to screen.
+When the user makes a legal move: Draw tile and display to screen.
+When it’s the computer’s turn: Place the tile on the position that would do the most flips.
+When the game is over (there are no more legal moves): Display the number of black, white tiles
+and winner.
+
